@@ -9,7 +9,7 @@ const Nav = () => {
     <div className='navbar'>
         <div className='logo'>
             <img src={EarthLogo} className='logo-img'/>
-            <Typography variant='h6'className='logo-text'>
+            <Typography variant='h6'className='logo-text' style={{fontWeight: 600, color: "#2E2C2C"}}>
                 WE ARE THE WORLD
             </Typography>
         </div>
