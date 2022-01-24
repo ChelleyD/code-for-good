@@ -1,3 +1,28 @@
 .App {
   text-align: center;
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 50px;
+}
+
+.logo-text {
+  padding-left: 0.75rem;
+}
+
+.nav-links{
+ margin: 1rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  border-bottom: #9AD455 solid 7px;
+} 
