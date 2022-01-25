@@ -1,13 +1,11 @@
 # Modules to Download
-npm i react-router-dom
-npm install @mui/material @emotion/react @emotion/styled
-<<<<<<< HEAD
 
-=======
-npm i react-parallax
-npm install @mui/icons-material
-npm i swiper
->>>>>>> main
+- npm i react-router-dom
+- npm install @mui/material @emotion/react @emotion/styled
+- npm i react-parallax
+- npm install @mui/icons-material
+- npm i swiper
+- npm i react-flippy
 
 # Getting Started with Create React App
 
