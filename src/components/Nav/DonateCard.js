@@ -1,7 +1,8 @@
 
 import React from "react"
 import { Card, CardContent, CardMedia, Typography,Box } from '@mui/material';
-import { Button, CardActionArea, CardActions, Grid} from '@mui/material';
+import { Button, CardActionArea, CardActions, Fab} from '@mui/material';
+import { textAlign } from "@mui/system";
 
 
 
@@ -10,18 +11,18 @@ function DonateCard ({name,note,pictures}){
 
 
     return(
-<Card sx={{ maxWidth: 345 }}>
-    <Box sx={{display: 'flex', flexDirection: 'row' }}>
+<Card sx={{}}>
+    <Box  sx={{display: 'flex', flexDirection: 'row' }}>
       <CardActionArea>
         <CardMedia
           component="img"
-          sx={{height:151}}
+          sx={{height: 200, width:200}}
           image={pictures}
           alt={name}
         />
         <CardContent>
-
-          <Typography gutterBottom variant="h5" component="div">
+          
+          <Typography>
               {name}
           </Typography>
           <Typography variant="body2" color="text.secondary">
@@ -31,9 +32,9 @@ function DonateCard ({name,note,pictures}){
       </CardActionArea>
       </Box>
       <CardActions>
-        <Button size="medium"  text-align= "center">
-          Donate
-        </Button>
+      <Fab variant="extended" textAlign='center'>
+        Donate
+      </Fab>
       </CardActions>
     </Card>
     
