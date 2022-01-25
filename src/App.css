@@ -108,7 +108,10 @@ body, html, * {
      display: block;
    }
 }
-
+MuiFab{
+  align-items: center;
+  justify-content: center;
+}
 @media screen and (max-width: 400px) {
   .section-heading {
     font-size: 200px;
