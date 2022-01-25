@@ -4,17 +4,17 @@ import Donate from "../../pages/Donate";
 
 const Links = [
     {
-        title: "home",
+        title: "Home",
         link: "/",
         component: <Home />
     },
     {
-        title: "solutions",
+        title: "Solutions",
         link: "/solutions",
         component: <Solutions/>
     },
     {
-        title: "donate",
+        title: "Donate",
         link: "/donate",
         component: <Donate />
     }
