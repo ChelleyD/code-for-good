@@ -9,17 +9,7 @@ function App() {
   return (
     <div className="App">
 
-      {/* <Faq name= "Frequently Asked Questions: " />
-      <Faq name= "Quincy" />
-        <button>Action</button>
-      <Faq name= "Tayharlee" />
-        <button>Action</button>
-      <Faq name= "Adama" />
-        <button>Action</button>
-      <Faq name= "Tamika" />
-        <button>Action</button> */}
       <Faq />
-
 
       <Nav />
       <Routes>
