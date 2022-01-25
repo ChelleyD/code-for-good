@@ -2,6 +2,8 @@
 npm i react-router-dom
 npm install @mui/material @emotion/react @emotion/styled
 npm i react-parallax
+npm install @mui/icons-material
+npm i swiper
 
 # Getting Started with Create React App
 
