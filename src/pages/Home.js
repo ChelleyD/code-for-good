@@ -1,3 +1,4 @@
+import '../styles/Home.css';
 import { Typography } from "@mui/material";
 import React from "react";
 // import Hero from "../images/home/hero2.png";
@@ -6,14 +7,11 @@ import { Parallax } from "react-parallax";
 import HeroSlide from "../images/home/HeroSlide";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-fade";
-
 // import Swiper core and required modules
-import SwiperCore, { Autoplay, EffectFade } from "swiper";
-
+import SwiperCore, { Autoplay} from "swiper";
 // install Swiper modules
 SwiperCore.use([Autoplay]);
 
