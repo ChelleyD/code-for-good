@@ -15,7 +15,11 @@ function App() {
       <Routes>
         {Links.map((element) => {
           return (
-            <Route path={element.link} element={element.component}/>
+            <Route
+              key={element}
+              path={element.link}
+              element={element.component}
+            />
           );
         })}
       </Routes>
