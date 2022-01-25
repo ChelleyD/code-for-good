@@ -2,25 +2,28 @@ import { Typography } from '@mui/material';
 import React from 'react';
 import Hero from '../images/home/hero2.png';
 import Button from '@mui/material/Button';
+import {Parallax} from 'react-parallax';
 
 function Home() {
   return (
     <div>
-        <div className='frame1'>
-          <div className='frame1-text'>
-            <Typography variant='h3' style={{fontWeight: 600}}>
-              Save Earth.
-            </Typography>
-              
-            <Typography variant='h5'>
-              The modern day activities that you love are killing 
-              the planet. Global warming is causing climate change. 
-              Find out what you can do today to help save the Earth.
-            </Typography>
+        <Parallax bgImage={Hero} strength={500}>
+          <div className='frame1'>
+            <div className='frame1-text'>
+              <Typography variant='h3' style={{fontWeight: 600}}>
+                Save Earth.
+              </Typography>
+                
+              <Typography variant='h5'>
+                The modern day activities that you love are killing 
+                the planet. Global warming is causing climate change. 
+                Find out what you can do today to help save the Earth.
+              </Typography>
 
-            <Button className='frame1-btn' variant="contained" size="medium" style={{fontSize: "1rem"}}>Make a Change</Button>
+              <Button className='frame1-btn' variant="contained" size="medium" sx={{fontSize: "1rem"}}>Make a Change</Button>
+            </div>
           </div>
-        </div>
+        </Parallax>
 
         <div className='home-content'>
           <Typography className='section-heading' variant='h4' style={{fontWeight: 600, color: "#2E2C2C"}}>

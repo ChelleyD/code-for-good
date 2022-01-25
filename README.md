@@ -1,6 +1,7 @@
 # Modules to Download
 npm i react-router-dom
 npm install @mui/material @emotion/react @emotion/styled
+npm i react-parallax
 
 # Getting Started with Create React App
 
