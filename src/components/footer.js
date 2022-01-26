@@ -1,24 +1,46 @@
-import React from 'react';
-import { Typography } from "@mui/material";
+import React, {useState, useEffect} from 'react';
+import { Typography, button } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import RedditIcon from "@mui/icons-material/Reddit";
+import { PortalWithState } from 'react-portal';
+import Faq from '../pages/Faq';
 
 const Footer = () => {
+  const [isOpen, setOpen] = useState(false);
+  useEffect(()=>{
+    if (isOpen){
+      document.getElementById('root').style.opacity = '.5'
+    }
+    else {
+      document.getElementById('root').style.opacity = '1'
+    }
+  }, [isOpen])
+
+  console.log(isOpen)
   return (
     <div className="footer">
-        <Typography variant="body2">
-          FAQ
-        </Typography>
+      <PortalWithState
+        node={document.getElementById("portal")}
+        closeOnOutsideClick={false}
+        closeOnEsc
+        onOpen={()=>setOpen(true)}
+        onClose={()=>setOpen(false)}
+      >
+        {({ openPortal, closePortal, isOpen, portal }) => (
+          <React.Fragment>
+            <Typography
+              variant="body2"
+              onClick={openPortal}
+              sx={{ cursor: "pointer" }}
+            >
+              FAQ
+            </Typography>
+            {portal(<Faq onClose={closePortal}/>)}
+            </React.Fragment>
+        )}
+      </PortalWithState>
 
-        <Typography
-          variant="body2"
-          onClick={() =>
-            window.open("mailto:save-earth@we-are-the-world.com", "_blank")
-          }
-        >
-          Contact Us
-        </Typography>
 
         <div className="footer-social">
           <Typography variant="body2">Social:</Typography>
