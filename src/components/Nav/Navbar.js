@@ -9,16 +9,18 @@ import "../../App.css";
 const Nav = () => {
   return (
     <div className="navbar">
-      <div className="logo">
-        <img src={EarthLogo} className="logo-img" />
-        <Typography
-          variant="h6"
-          className="logo-text"
-          style={{ fontWeight: 600, color: "#2E2C2C" }}
-        >
-          WE ARE THE WORLD
-        </Typography>
-      </div>
+      <Link to="/" className="page-link">
+        <div className="logo">
+          <img src={EarthLogo} className="logo-img" />
+          <Typography
+            variant="h6"
+            className="logo-text"
+            style={{ fontWeight: 600, color: "#707070" }}
+          >
+            WE ARE THE WORLD
+          </Typography>
+        </div>
+      </Link>
 
       <div>
         {Links.map((element) => {

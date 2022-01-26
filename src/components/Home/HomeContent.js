@@ -8,7 +8,7 @@ const HomeContent = () => {
     <div className="home-content">
       <Typography
         className="section-heading"
-        variant="h4"
+        variant="h5"
         style={{ fontWeight: 600, color: "#2E2C2C" }}
       >
         Mission Statement
@@ -26,7 +26,7 @@ const HomeContent = () => {
 
       <Typography
         className="section-heading"
-        variant="h4"
+        variant="h5"
         style={{ fontWeight: 600, color: "#2E2C2C" }}
       >
         Click on a location to view its past climate trends
@@ -41,7 +41,7 @@ const HomeContent = () => {
 
       <Typography
         className="section-heading"
-        variant="h4"
+        variant="h5"
         style={{ fontWeight: 600, color: "#2E2C2C" }}
       >
         Stay updated about current events
@@ -51,7 +51,7 @@ const HomeContent = () => {
 
       <Typography
         className="section-heading"
-        variant="h4"
+        variant="h5"
         style={{ fontWeight: 600, color: "#2E2C2C" }}
       >
         Resources

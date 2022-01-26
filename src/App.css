@@ -1,8 +1,27 @@
-body, html, * {
+body,
+html,
+* {
   margin: 0;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .App {
   height: 100vh;
- }
+}
+
+.page-link {
+  text-decoration: none;
+}
+
+.nav-links {
+  color: #707070;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.nav-links:hover {
+  color: #9ad455;
+  background: #138AA2;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
