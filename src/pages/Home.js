@@ -1,3 +1,4 @@
+import "../styles/Home.css";
 import { Typography } from "@mui/material";
 import React from "react";
 // import Hero from "../images/home/hero2.png";

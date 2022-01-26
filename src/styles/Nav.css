@@ -1,0 +1,30 @@
+.logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    height: 50px;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+  }
+  
+  .logo-text {
+    padding-left: 0.75rem;
+  }
+  
+  .nav-links{
+   margin: 1rem;
+  }
+  
+  .hamburger-menu {
+    display: none;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    border-bottom: #9AD455 solid 7px;
+  } 
