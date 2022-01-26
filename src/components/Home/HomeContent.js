@@ -48,7 +48,6 @@ const HomeContent = () => {
       </Typography>
 
       <NewsList />
-      {/* <div className="news-articles"></div> */}
 
       <Typography
         className="section-heading"

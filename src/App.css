@@ -3,11 +3,6 @@ body, html, * {
   font-family: 'Poppins', sans-serif !important;
 }
 
-/* .App { */
-  /* text-align: center; */
-/* } */
-
-MuiFab{
-  align-items: center;
-  justify-content: center;
-}
+.App {
+  height: 100vh;
+ }

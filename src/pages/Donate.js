@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Donation.css";
 import TeamSea from "../images/image-donation/team-seas-logo.png";
 import TeamTree from "../images/image-donation/team-trees-logo.png";
 import Team360 from "../images/image-donation/360-logo.png";
@@ -25,7 +26,7 @@ function Donate() {
   ];
 
   return (
-    <div>
+    <div className="donate-container">
       Donate Page
       <h1>
         Want to help? <br /> Make a change by donating one of these

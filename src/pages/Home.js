@@ -18,7 +18,7 @@ SwiperCore.use([Autoplay]);
 
 function Home() {
   return (
-    <div className="App">
+    <div>
       <Swiper
         className="mySwiper"
         spaceBetween={30}
