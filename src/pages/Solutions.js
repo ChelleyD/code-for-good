@@ -10,7 +10,7 @@ function Solutions() {
       {SolutionsInfo.map((solution) => {
         return (
           <Grid item xs={4}>
-            <FlipCard frontImage={solution.frontImage} description={solution.description} />
+            <FlipCard frontImage={solution.frontImage} description={solution.description}  backImage={solution.backImage} description2={solution.description2}/>
           </Grid>
         );
       })}

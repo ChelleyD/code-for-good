@@ -2,6 +2,7 @@ import { useRef } from "react";
 import Flippy, { FrontSide, BackSide } from "react-flippy";
 import FrontDisplay from "./FrontDisplay";
 import BackDisplay from "./BackDisplay";
+import React from "react";
 
 function FlipCard({ frontImage, backImage, description, description2 }) {
   const ref = useRef();
@@ -13,7 +14,7 @@ function FlipCard({ frontImage, backImage, description, description2 }) {
       ref={ref} // to use toggle method like ref.curret.toggle()
       // if you pass isFlipped prop component will be controlled component.
       // and other props, which will go to div
-      style={{ width: "380px", height: "380px" }} /// these are optional style, it is not necessary
+      style={{ width: "400px", height: "560px" }} /// these are optional style, it is not necessary
     >
       <FrontSide
         onClick={() => {
@@ -28,7 +29,7 @@ function FlipCard({ frontImage, backImage, description, description2 }) {
         }}
         style={{ backgroundColor: "#175852", }}
       >
-        <BackDisplay backImage={backImage} description={description2} />
+        <BackDisplay backImage={backImage} description2={description2} />
       </BackSide>
     </Flippy>
   );
