@@ -1,46 +1,29 @@
-
-import React from "react"
-import { Card, CardContent, CardMedia, Typography,Box } from '@mui/material';
-import { Button, CardActionArea, CardActions, Fab} from '@mui/material';
-import { textAlign } from "@mui/system";
-
+import React from "react";
+import "../styles/Donation.css";
+import Button from "@mui/material/Button";
+import Link from '@mui/material/Link';
 
 
+function DonateCard({ name, note, pictures,give}) {
+  return (
+    <div className="donate-card">
+      <div className="donate-image-container">
+        <img src={pictures} alt={name} />
+      </div>
+      <div className="donate-content">
+        <h2>{name}</h2>
+        <p>{note}</p>
 
-function DonateCard ({name,note,pictures}){
-
-
-    return(
-<Card sx={{}}>
-    <Box  sx={{display: 'flex', flexDirection: 'row' }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          sx={{height: 200, width:200}}
-          image={pictures}
-          alt={name}
-        />
-        <CardContent>
-          
-          <Typography>
-              {name}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {note}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      </Box>
-      <CardActions>
-      <Fab variant="extended" textAlign='center'>
-        Donate
-      </Fab>
-      </CardActions>
-    </Card>
-    
-    );
+        <Link href={give} target="_blank" underline="none">
+          <Button
+          className="donate-btn1"
+          variant="contained">
+          Donate
+          </Button>
+        </Link>
+      </div>
+    </div>
+  );
 }
-
-
 
 export default DonateCard;
