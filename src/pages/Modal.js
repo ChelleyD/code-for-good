@@ -1,7 +1,7 @@
 import React from 'react';
 import reactDom from 'react-dom';
 
-const FAQ_STYLES = {
+const MODAL_STYLES = {
     position: "fixed",
     top: "50%",
     left: "50%",
@@ -12,14 +12,14 @@ const FAQ_STYLES = {
 
 }
 
-export default function Faq({ open, children, onClose}) {
+export default function Modal({ open, children, onClose}) {
     if (!open) return null
 
   return reactDom.createPortal(
   
   <>
-    <div style={FAQ_STYLES}>
-      <button onClick={onClose}>Close FAQ</button>
+    <div style={MODAL_STYLES}>
+      <button onClick={onClose}>Close Modal</button>
       {children}
 
     </div>
@@ -29,5 +29,4 @@ export default function Faq({ open, children, onClose}) {
   document.getElementById("portal")
 )
 }
-
 
