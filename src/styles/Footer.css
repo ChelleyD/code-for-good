@@ -1,0 +1,20 @@
+.footer {
+    background: #9ad455;
+    color: white;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto;
+    /* position: absolute; */
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .footer-social {
+    display: flex;
+  }
+  
+  .contact {
+    position: fixed;
+    inset: auto 1rem 3.5rem auto;
+  }
