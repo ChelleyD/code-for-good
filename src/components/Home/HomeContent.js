@@ -15,11 +15,16 @@ const HomeContent = () => {
       </Typography>
 
       <Typography style={{ color: "#2E2C2C" }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Felis imperdiet
-        proin fermentum Leo. Pretium vulputate sapien nec sagittis. Sed faucibus
-        turpis in eu mi bibendum neque egestas congue. A arcu cursus vitae
-        congue.
+        Our goal at We Are the World is to educate the Average American. On
+        average, families can save $500 a year on utility bills due to federal
+        efficiency standards for appliances, lighting and plumbing - with the
+        benefits outweighing the costs by 5 to 1. Existing energy standards are
+        estimated to be responsible for about 300,000 jobs as of today, and are
+        expected to rise to 500,000 by 2030. This can also be seen through
+        investments in energy efficiency in buildings, transportation and
+        industry - all of which pay off several times over in energy cost
+        savings. Strengthening these standards would lead to even more consumer
+        savings, economic benefits and jobs.
       </Typography>
 
       <div className="page-divider"></div>
@@ -57,17 +62,26 @@ const HomeContent = () => {
         Resources
       </Typography>
 
-      <Typography>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt
+      <Typography className="resource">
+        <a href="https://climate.nasa.gov/" target="_blank">
+          NASA: Global Climate Change
+        </a>
       </Typography>
-      <Typography>
-        ut labore et dolore magna aliqua. Felis imperdiet proin fermentum Leo.
-        Pretium vulputate
+      <Typography className="resource">
+        <a
+          href="https://www.un.org/en/climatechange/what-is-climate-change"
+          target="_blank"
+        >
+          United Nations: Climate Action
+        </a>
       </Typography>
-      <Typography>
-        sapien nec sagittis. Sed faucibus turpis in eu mi bibendum neque egestas
-        congue.
+      <Typography className="resource">
+        <a
+          href="https://www.nrdc.org/stories/how-you-can-stop-global-warming"
+          target="_blank"
+        >
+          NRDC: Natural Resources Defense Council
+        </a>
       </Typography>
     </div>
   );
