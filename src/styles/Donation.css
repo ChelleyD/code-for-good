@@ -63,5 +63,7 @@ p{
   width: 10rem !important;
   margin: 10px !important;
   /* position: absolute !important; */
- 
+}
+.donate-container {
+    height: calc(100vh - 130px);
 }
