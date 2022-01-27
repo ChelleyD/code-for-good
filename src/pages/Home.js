@@ -23,7 +23,6 @@ function Home() {
   return (
     <div>
       <Swiper
-        className="mySwiper"
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
