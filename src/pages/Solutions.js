@@ -6,14 +6,16 @@ import "../styles/Solution.css"
 //import Display from "..components/Solutions/Display.jsimport"
 
 <head>
-    <title><h2>Solutions</h2></title>
+    <title><h2>Solution</h2></title>
 </head>
 
 function Solutions() {
 
   return (
    <div className="solution-container">
-  <h2>Negative vs Positive Solutions</h2>
+  <p><h2>A Better Solution</h2></p>
+  <p><h2>Click on cards to find out how you can help do your part.</h2></p>
+  <p>
     <Grid container spacing={2}>
       {SolutionsInfo.map((solution) => {
         return (
@@ -24,7 +26,7 @@ function Solutions() {
         );
       })}
     </Grid>
-  </div> 
+  </p> </div> 
   );
 }
 

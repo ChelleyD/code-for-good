@@ -6,10 +6,10 @@ import { Typography } from "@mui/material";
 
 function BackDisplay({ backImage, description2, hovered }) {
   return (
-    <Card style={{ backgroundColor: "rgb(86, 180, 49)" }}>
+    <Card  style={{ width: "400px", height: "560px", background: "#175852", }}>
       <CardMedia
         component="img"
-        height="230"
+        height="300"
         image={backImage}
         alt="no image loaded"
       />

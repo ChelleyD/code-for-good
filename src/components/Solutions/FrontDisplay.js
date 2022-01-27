@@ -6,10 +6,10 @@ import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import { Typography } from "@mui/material";
 function FrontDisplay({ frontImage, description, hovered }) {
   return (
-    <Card style={{ backgroundColor: "rgb(255, 0, 0)" }}>
+    <Card  style={{ width: "400px", height: "560px", background: "#ff726f", }}>
       <CardMedia
         component="img"
-        height="400"
+        height="300"
         image={frontImage}
         alt="no image loaded"
       />

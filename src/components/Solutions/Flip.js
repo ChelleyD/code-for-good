@@ -18,14 +18,15 @@ function FlipCard({ frontImage, backImage, description, description2 }) {
       // and other props, which will go to div
       onMouseEnter={()=>setHovered(true)}
       onMouseLeave={()=>setHovered(false)}
-      style={{ width: "400px", height: "560px" }} /// these are optional style, it is not necessary
+      style={{ width: "400px", height: "560px", padding: "0"}} /// these are optional style, it is not necessary
     >
       <FrontSide
         onClick={() => {
           ref.current.toggle();
-      
+              
         }}
-        style={{ backgroundColor: "#ff726f",}}
+        style={{ width: "400px", height: "560px", padding: "0"}}
+
       >
         <FrontDisplay frontImage={frontImage} description={description}  hovered = {hovered}/>
       </FrontSide>
@@ -33,7 +34,7 @@ function FlipCard({ frontImage, backImage, description, description2 }) {
         onClick={() => {
           ref.current.toggle();
         }}
-        style={{ backgroundColor: "#175852", }}
+        style={{ width: "400px", height: "560px", padding: "0"}}
       >
         <BackDisplay backImage={backImage} description2={description2} hovered = {hovered}/>
       </BackSide>
