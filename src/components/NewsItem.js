@@ -18,7 +18,7 @@ const NewsItem = ({ title, url, urlToImage }) => {
           alt="new article image"
         />
         <CardContent sx={{height: 50}}>
-          <Typography gutterBottom variant="caption" component="div">
+          <Typography gutterBottom variant="body2" component="div">
               {title}
           </Typography>
         </CardContent>

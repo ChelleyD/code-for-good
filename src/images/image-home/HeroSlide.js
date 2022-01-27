@@ -1,6 +1,6 @@
-import Image1 from './test-image1.jpg';
-import Image2 from './test-image2.jpg';
-import Image3 from './test-image3.jpg';
+import Image1 from './hero-img-1.jpg';
+import Image2 from './hero-img-2.jpg';
+import Image3 from './hero-img-3.jpg';
 
 const HeroSlide = [
     {

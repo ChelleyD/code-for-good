@@ -5,6 +5,7 @@ import Links from "./components/Nav/Links";
 import Nav from "./components/Nav/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 import Faq from "./pages/Faq";
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
         })}
       </Routes>
 
+      <Contact />
+      
       <div>
         <Footer />
       </div>

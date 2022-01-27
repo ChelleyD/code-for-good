@@ -4,10 +4,12 @@ import { useState } from 'react';
 import { SwiperSlide } from 'swiper/react';
 import NewsItem from './NewsItem';
 import { Swiper } from "swiper/react";
+import "../styles/Home.css";
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
+// import "swiper/css/pagination";
 import "swiper/css/navigation";
+// import "swiper/swiper-bundle.css";
 // import Swiper core and required modules
 import SwiperCore, {
   Navigation
