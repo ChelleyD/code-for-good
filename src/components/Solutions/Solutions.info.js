@@ -16,7 +16,6 @@ import frontCard8 from "../../images/image-solution/Card8s1.jpg";
 import backCard8 from "../../images/image-solution/Card8s2.jpg";
 import frontCard9 from "../../images/image-solution/Card9s1.jpg";
 import backCard9 from "../../images/image-solution/Card9s2.jpg";
-//import backgroundpic from "../../images-solution/solutionbackground"
 
 
 const SolutionsInfo = [
@@ -84,11 +83,3 @@ const SolutionsInfo = [
   },
 ];
 export default SolutionsInfo;
-//return (
-
-
-//<div style= 'background-image: {backgroundpic}'>
-  //<h2>Solution Page</h2>
- 
-//</div>
-//)
