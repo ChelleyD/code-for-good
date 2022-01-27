@@ -7,6 +7,7 @@
 - npm i swiper
 - npm i react-flippy
 - npm i axios
+- npm i react-player
 
 # Getting Started with Create React App
 

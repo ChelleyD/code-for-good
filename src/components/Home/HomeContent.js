@@ -2,7 +2,8 @@ import React from "react";
 import { Typography } from "@mui/material";
 import "../../App.css";
 import NewsList from "../NewsList";
-import SpaOutlinedIcon from '@mui/icons-material/SpaOutlined';
+import SpaOutlinedIcon from "@mui/icons-material/SpaOutlined";
+import ReactPlayer from "react-player/youtube";
 
 const HomeContent = () => {
   return (
@@ -35,12 +36,16 @@ const HomeContent = () => {
         variant="h5"
         style={{ fontWeight: 600, color: "#2E2C2C" }}
       >
-        Click on a location to view its past climate trends
+        Watch a brief informative video about climate change below
       </Typography>
 
-      <div className="climate-trends">
-        <div className="ct-globe"></div>
-        <div className="ct-visual"></div>
+      <div className="cc-video-container">
+        <ReactPlayer
+          className="cc-video"
+          url="https://youtu.be/-D_Np-3dVBQ"
+          width={"700px"}
+          height={"420px"}
+        />
       </div>
 
       <div className="page-divider"></div>

@@ -34,37 +34,41 @@ function Home() {
         {HeroSlide.map((element) => {
           return (
             <SwiperSlide>
-              <Parallax bgImage={element.name} strength={500} style={{height: "100%", width: "100%", objectFit: "fill"}}>
-                <div className="frame1">
-                  <div className="frame1-text">
-                    <Typography variant="h3" style={{ fontWeight: 600 }}>
-                      Save Earth.
-                    </Typography>
-
-                    <Typography variant="h6">
-                      The modern day activities that you love are killing the
-                      planet. Global warming is causing climate change. Find out
-                      what you can do today to help save the Earth.
-                    </Typography>
-
-                    <Link to="/solutions" className="page-link">
-                      <Button 
-                        className="frame1-btn"
-                        variant="contained"
-                        size="medium"
-                        sx={{ fontSize: "1rem" }}
-                      >
-                        Make a Change
-                      </Button>
-                    </Link>
-                    
-                  </div>
-                </div>
+              <Parallax
+                bgImage={element.name}
+                strength={500}
+                style={{ height: "100%", width: "100%", objectFit: "fill" }}
+              >
+                <div className="frame1"></div>
               </Parallax>
             </SwiperSlide>
           );
         })}
       </Swiper>
+
+      <div className="frame1-text">
+        <Typography variant="h3" style={{ fontWeight: 600 }}>
+          Save Earth.
+        </Typography>
+
+        <Typography variant="h6">
+          The modern day activities that you love are killing the planet. Global
+          warming is causing climate change. Find out what you can do today to
+          help save the Earth.
+        </Typography>
+
+        <Link to="/solutions" className="page-link">
+          <Button
+            className="frame1-btn"
+            variant="contained"
+            size="medium"
+            sx={{ fontSize: "1rem" }}
+          >
+            Make a Change
+          </Button>
+        </Link>
+      </div>
+
       <HomeContent />
     </div>
   );
