@@ -2,6 +2,7 @@ import React from "react";
 import { Typography } from "@mui/material";
 import "../../App.css";
 import NewsList from "../NewsList";
+import SpaOutlinedIcon from '@mui/icons-material/SpaOutlined';
 
 const HomeContent = () => {
   return (
@@ -55,34 +56,42 @@ const HomeContent = () => {
       <NewsList />
 
       <Typography
-        className="section-heading"
-        variant="h5"
+        className="resource-heading"
+        variant="h6"
         style={{ fontWeight: 600, color: "#2E2C2C" }}
       >
         Resources
       </Typography>
 
-      <Typography className="resource">
-        <a href="https://climate.nasa.gov/" target="_blank">
-          NASA: Global Climate Change
-        </a>
-      </Typography>
-      <Typography className="resource">
-        <a
-          href="https://www.un.org/en/climatechange/what-is-climate-change"
-          target="_blank"
-        >
-          United Nations: Climate Action
-        </a>
-      </Typography>
-      <Typography className="resource">
-        <a
-          href="https://www.nrdc.org/stories/how-you-can-stop-global-warming"
-          target="_blank"
-        >
-          NRDC: Natural Resources Defense Council
-        </a>
-      </Typography>
+      <div className="resources">
+        <Typography>
+          <a href="https://climate.nasa.gov/" target="_blank">
+            NASA: Global Climate Change
+          </a>
+        </Typography>
+
+        <SpaOutlinedIcon />
+
+        <Typography>
+          <a
+            href="https://www.un.org/en/climatechange/what-is-climate-change"
+            target="_blank"
+          >
+            United Nations: Climate Action
+          </a>
+        </Typography>
+
+        <SpaOutlinedIcon />
+
+        <Typography>
+          <a
+            href="https://www.nrdc.org/stories/how-you-can-stop-global-warming"
+            target="_blank"
+          >
+            NRDC: Natural Resources Defense Council
+          </a>
+        </Typography>
+      </div>
     </div>
   );
 };

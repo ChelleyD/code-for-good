@@ -26,6 +26,11 @@ html,
   border-radius: 5px;
 }
 
-.resource {
+.resources {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.resource-heading {
   text-align: center;
 }
