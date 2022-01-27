@@ -14,7 +14,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-fade";
 // import Swiper core and required modules
-import SwiperCore, { Autoplay, EffectFade } from "swiper";
+import SwiperCore, { Autoplay } from "swiper";
 import HomeContent from "../components/Home/HomeContent";
 // install Swiper modules
 SwiperCore.use([Autoplay]);
