@@ -4,6 +4,7 @@ import TeamTree from '../images/image-donation/team-trees-logo.png';
 import Team350 from '../images/image-donation/360-logo.png';
 import DonateCard from '../components/DonateCard';
 import { Grid, Typography } from '@mui/material';
+import Background from '../images/image-donation/Earth-green.jpeg';
 
 
 
@@ -11,7 +12,7 @@ function Donate() {
 
   const Orginisation = [
     {
-      name: 'Team tree',
+      name: 'Team Tree',
       pictures: TeamTree,
       note: "Team Trees, stylized as #TEAMTREES,"
         + "is a collaborative fundraiser that raised 20 million U.S. dollars before 2020 to plant 20 million trees. ... "
@@ -34,17 +35,15 @@ function Donate() {
     }
   ];
 
-
-
-
   return (
-    <div className="donation-container" >
+    <div  style={{backgroundImage:`url(${Background})`}}> 
+      <div className="donation-container" >
       <Typography
         className="donate-heading"
         variant="h3"
         style={{ }}
       >
-        <h3>Want to help? <br /> Make a change by donating one of these organisation!</h3>
+        <h3 >Want to help? <br /> Make a change by donating one of these organisation!</h3>
         <br />
       </Typography>
       <div>
@@ -61,6 +60,7 @@ function Donate() {
 
       </Grid>
       </div>
+    </div>
     </div>
   );
 }

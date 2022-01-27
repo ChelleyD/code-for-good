@@ -14,14 +14,17 @@ function DonateCard({ name, note, pictures,give}) {
         <h2>{name}</h2>
         <p>{note}</p>
 
-        <Link href={give} target="_blank" underline="none">
-          <Button
+        
+
+        
+      </div>
+      <Button
           className="donate-btn1"
           variant="contained">
+            <Link href={give} target="_blank" underline="none">
           Donate
+          </Link>
           </Button>
-        </Link>
-      </div>
     </div>
   );
 }
