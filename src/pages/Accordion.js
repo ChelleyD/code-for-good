@@ -43,6 +43,62 @@ export default function SimpleAccordion() {
             </Typography>
           </AccordionDetails>
         </Accordion>
+
+        <Accordion>
+          <AccordionSummary
+             expandIcon={<ExpandMoreIcon />}
+             aria-controls="panel2a-content"
+             id="panel2a-header">
+            <Typography>Do scientists really agree on climate change?</Typography>
+          </AccordionSummary>
+          
+          <AccordionDetails>
+            <Typography>
+            A 2019 review of scientific papers found the consensus
+             on the cause of climate change to be at 100%, and a 
+             2021 study concluded that over 99% of scientific papers
+             agree on the human cause of climate change.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+
+        <Accordion>
+          <AccordionSummary
+             expandIcon={<ExpandMoreIcon />}
+             aria-controls="panel2a-content"
+             id="panel2a-header">
+            <Typography>How bad is climate change 2021</Typography>
+          </AccordionSummary>
+          
+          <AccordionDetails>
+            <Typography>
+            2021 was consistent with the long-term human-caused
+             global warming trend of about 0.2 °C (0.36 °F) per decade.
+             From India to England, Russia, China, New Zealand, the U.S.,
+             Indonesia, Uganda, Germany, ... extreme precipitation and flooding
+             over the span of just a few months.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+
+        <Accordion>
+          <AccordionSummary
+             expandIcon={<ExpandMoreIcon />}
+             aria-controls="panel2a-content"
+             id="panel2a-header">
+            <Typography>Can climate change be stopped?</Typography>
+          </AccordionSummary>
+          
+          <AccordionDetails>
+            <Typography>
+            While climate change cannot be stopped,
+            it can be slowed. To avoid the worst consequences of climate change,
+            we'll need to reach “net zero” carbon emissions by 2050 or sooner.
+            Net zero means that, on balance, no more carbon is dumped into the
+            atmosphere than is taken out
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
       
       </div>
 );
