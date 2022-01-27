@@ -6,6 +6,8 @@
 - npm install @mui/icons-material
 - npm i swiper
 - npm i react-flippy
+- npm i axios
+- npm install @mui/icons-material
 
 # Getting Started with Create React App
 

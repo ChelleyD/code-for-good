@@ -3,10 +3,6 @@ body, html, * {
   font-family: 'Poppins', sans-serif !important;
 }
 
-/* .App { */
-  /* text-align: center; */
-/* } */
-
 .logo {
   display: flex;
   align-items: center;
@@ -108,12 +104,14 @@ body, html, * {
      display: block;
    }
 }
-MuiFab{
-  align-items: center;
-  justify-content: center;
-}
+
 @media screen and (max-width: 400px) {
   .section-heading {
     font-size: 200px;
   }
 }
+
+.App {
+  height: 100vh;
+ }
+

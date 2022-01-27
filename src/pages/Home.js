@@ -1,3 +1,4 @@
+import "../styles/Home.css";
 import { Typography } from "@mui/material";
 import React from "react";
 // import Hero from "../images/home/hero2.png";
@@ -17,7 +18,7 @@ SwiperCore.use([Autoplay]);
 
 function Home() {
   return (
-    <div className="App">
+    <div>
       <Swiper
         className="mySwiper"
         spaceBetween={30}

@@ -1,6 +1,8 @@
 import React from "react";
 import { Typography } from "@mui/material";
 import "../../App.css";
+import NewsList from "../NewsList";
+
 const HomeContent = () => {
   return (
     <div className="home-content">
@@ -45,7 +47,7 @@ const HomeContent = () => {
         Stay updated about current events
       </Typography>
 
-      <div className="news-articles"></div>
+      <NewsList />
 
       <Typography
         className="section-heading"
