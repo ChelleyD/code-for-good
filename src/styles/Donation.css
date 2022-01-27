@@ -8,7 +8,7 @@ h3.donate-heading{
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: calc(100vh- 100px);
+    height: calc(100vh - 130px);
 }
 
 .donate-card {
@@ -20,7 +20,7 @@ h3.donate-heading{
     background-color: rgba(0, 0, 0, 0.452);
     border : 1px solid #138aa2;
     box-shadow: 0 0 8px #138aa2;
-    margin-bottom:50px;
+    /* margin-bottom:50px; */
     position: relative;
 }
 
@@ -49,7 +49,7 @@ h2{
     font-weight: bold;
 
 }
-p{
+.donate-content p{
     color:#9ad455;
     text-align: center;
 }
@@ -63,7 +63,4 @@ p{
   width: 10rem !important;
   margin: 10px !important;
   /* position: absolute !important; */
-}
-.donate-container {
-    height: calc(100vh - 130px);
 }

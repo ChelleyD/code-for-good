@@ -32,14 +32,9 @@ function App() {
         })}
       </Routes>
 
-<<<<<<< HEAD
       <Contact />
-=======
-      {/* <Contact /> */}
->>>>>>> 974d66db98cee42b1dfa69e88f39ea239ebcd661
-      
+      <Footer />
       <div>
-        <Footer />
       </div>
       
     </div>

@@ -32,7 +32,7 @@ const Footer = () => {
             <Typography
               variant="body2"
               onClick={openPortal}
-              sx={{ cursor: "pointer" }}
+              sx={{ cursor: "pointer", color: "white" }}
             >
               FAQ
             </Typography>
@@ -41,6 +41,15 @@ const Footer = () => {
         )}
       </PortalWithState>
 
+      <Typography
+        variant="body2"
+        onClick={() =>
+          window.open("mailto:save-earth@we-are-the-world.com", "_blank")
+        }
+        sx={{ cursor: "pointer", color: "white"}}
+      >
+        Contact Us
+      </Typography>
 
         <div className="footer-social">
           <Typography variant="body2">Social:</Typography>
