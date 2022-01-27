@@ -1,12 +1,17 @@
 import "./App.css";
 import "./styles/Nav.css";
 import "./styles/Footer.css";
+import "./App.css";
+import "./styles/Nav.css";
+import "./styles/Footer.css";
 import Links from "./components/Nav/Links";
 import Nav from "./components/Nav/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Faq from "./pages/Faq";
+// import Contact from "./components/Contact";
+// import Faq from "./pages/Faq";
 
 function App() {
   return (
@@ -27,7 +32,11 @@ function App() {
         })}
       </Routes>
 
+<<<<<<< HEAD
       <Contact />
+=======
+      {/* <Contact /> */}
+>>>>>>> 974d66db98cee42b1dfa69e88f39ea239ebcd661
       
       <div>
         <Footer />
